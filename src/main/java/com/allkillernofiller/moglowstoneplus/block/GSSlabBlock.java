@@ -10,7 +10,7 @@ public class GSSlabBlock extends SlabBlock {
                 .sound(SoundType.GLASS)
                 .strength(0.3f)
                 .lightLevel((p_50755_) -> {
-				      return 15;
+				      return 8;
 				   })
         );
     }
