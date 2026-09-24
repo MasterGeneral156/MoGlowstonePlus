@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "moglowstoneplus:block/redgsblock",
-    "top": "moglowstoneplus:block/redgsblock",
-    "side": "moglowstoneplus:block/redgsblock"
-  }
-}

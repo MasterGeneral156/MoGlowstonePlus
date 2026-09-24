@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "moglowstoneplus:block/pinkgsblock",
-    "top": "moglowstoneplus:block/pinkgsblock",
-    "side": "moglowstoneplus:block/pinkgsblock"
-  }
-}
