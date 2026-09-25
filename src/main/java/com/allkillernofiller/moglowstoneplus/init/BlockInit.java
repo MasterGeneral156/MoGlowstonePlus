@@ -135,7 +135,7 @@ public class BlockInit {
                     .setId(ResourceKey.create(Registries.BLOCK, registryName))
                     .lightLevel(state -> 15)));
     public static final DeferredBlock<Block> LIGHT_BLUE_GLOWSTONE_BRICK =
-            BLOCKS.register("light_blueglowstone_brick", registryName -> new GSBrick(BlockBehaviour.Properties.of()
+            BLOCKS.register("light_blue_glowstone_brick", registryName -> new GSBrick(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_LIGHT_BLUE)
                     .sound(SoundType.GLASS)
                     .setId(ResourceKey.create(Registries.BLOCK, registryName))
