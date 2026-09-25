@@ -1,6 +1,7 @@
 package com.allkillernofiller.moglowstoneplus;
 
 import com.allkillernofiller.moglowstoneplus.init.BlockInit;
+import com.allkillernofiller.moglowstoneplus.init.ItemInit;
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.moglowstone.TabRegistry;
 
@@ -21,16 +22,19 @@ public class MoGlowstonePlus {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "moglowstoneplus";
 
+	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
+	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
+
     public MoGlowstonePlus(IEventBus modbus, ModContainer modContainer) {
 		instance = this;
         modbus.addListener(this::fillTab);
         BlockInit.BLOCKS.register(modbus);
-		BlockInit.ITEMS.register(modbus);
+		ItemInit.ITEMS.register(modbus);
     }
 
 	private void setup(final FMLCommonSetupEvent event)
 	{
-		LOGGER.info("Mo' Glowstonez+ for Minecraft b" + ModUtils.getMCVersion() + " is launching.");
+		LOGGER.info("Mo' Glowstonez+ for Minecraft v" + ModUtils.getMCVersion() + " is launching.");
 	}
 
 
@@ -38,36 +42,36 @@ public class MoGlowstonePlus {
 	{
 		if (ev.getTabKey() == TabRegistry.MOGLOWSTONE_TAB.getKey())
 		{
-			ev.accept(BlockInit.BLACK_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.BLACK_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.BLUE_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.BLUE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.BROWN_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.BROWN_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.CYAN_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.CYAN_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.GRAY_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.GRAY_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.GREEN_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.GREEN_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.LIGHT_BLUE_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.LIGHT_BLUE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.LIGHT_GRAY_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.LIGHT_GRAY_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.LIME_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.LIME_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.MAGENTA_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.MAGENTA_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.ORANGE_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.ORANGE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.PINK_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.PINK_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.PURPLE_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.PURPLE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.RED_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.RED_GLOWSTONE_SLAB_ITEM);
-			ev.accept(BlockInit.WHITE_GLOWSTONE_BRICK_ITEM);
-			ev.accept(BlockInit.WHITE_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.BLACK_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.BLACK_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.BLUE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.BLUE_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.BROWN_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.BROWN_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.CYAN_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.CYAN_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.GRAY_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.GRAY_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.GREEN_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.GREEN_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.LIGHT_BLUE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.LIGHT_BLUE_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.LIGHT_GRAY_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.LIGHT_GRAY_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.LIME_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.LIME_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.MAGENTA_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.MAGENTA_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.ORANGE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.ORANGE_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.PINK_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.PINK_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.PURPLE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.PURPLE_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.RED_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.RED_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.WHITE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.WHITE_GLOWSTONE_SLAB_ITEM);
 		}
 	}
 }
