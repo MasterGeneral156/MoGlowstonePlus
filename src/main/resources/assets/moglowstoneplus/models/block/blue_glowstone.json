@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moglowstoneplus:block/bluegsblock"
+    "all": "moglowstone:block/blue_glowstone_block"
   }
 }

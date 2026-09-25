@@ -42,36 +42,39 @@ public class MoGlowstonePlus {
 	{
 		if (ev.getTabKey() == TabRegistry.MOGLOWSTONE_TAB.getKey())
 		{
-			ev.accept(ItemInit.BLACK_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.GLOWSTONE_SLAB_ITEM);
 			ev.accept(ItemInit.BLACK_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.BLUE_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.BLUE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.BROWN_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.BROWN_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.CYAN_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.CYAN_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.GRAY_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.GRAY_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.GREEN_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.GREEN_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.LIGHT_BLUE_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.LIGHT_BLUE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.LIGHT_GRAY_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.LIGHT_GRAY_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.LIME_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.LIME_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.MAGENTA_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.MAGENTA_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.ORANGE_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.ORANGE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.PINK_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.PINK_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.PURPLE_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.PURPLE_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.RED_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.RED_GLOWSTONE_SLAB_ITEM);
-			ev.accept(ItemInit.WHITE_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.WHITE_GLOWSTONE_SLAB_ITEM);
+
+			ev.accept(ItemInit.BLACK_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.BLUE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.BROWN_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.CYAN_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.GRAY_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.GREEN_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.LIGHT_BLUE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.LIGHT_GRAY_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.LIME_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.MAGENTA_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.ORANGE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.PINK_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.PURPLE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.RED_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.WHITE_GLOWSTONE_BRICK_ITEM);
+
 		}
 	}
 }

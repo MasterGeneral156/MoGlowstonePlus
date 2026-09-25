@@ -1,8 +1,8 @@
 {
   "parent": "block/slab_top",
   "textures": {
-    "bottom": "moglowstoneplus:block/lbluegsblock",
-    "top": "moglowstoneplus:block/lbluegsblock",
-    "side": "moglowstoneplus:block/lbluegsblock"
+    "bottom": "moglowstone:block/light_blue_glowstone_block",
+    "top": "moglowstone:block/light_blue_glowstone_block",
+    "side": "moglowstone:block/light_blue_glowstone_block"
   }
 }

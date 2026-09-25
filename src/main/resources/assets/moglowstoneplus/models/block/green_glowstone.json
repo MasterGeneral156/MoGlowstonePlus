@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moglowstoneplus:block/greengsblock"
+    "all": "moglowstone:block/green_glowstone_block"
   }
 }
