@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GGG"
+    ],
+    "key": {
+        "G": "moglowstone:lime_glowstone_block"
+    },
+    "result": {
+        "id": "moglowstoneplus:lime_glowstone_slab",
+		"count": 6
+    }
+}

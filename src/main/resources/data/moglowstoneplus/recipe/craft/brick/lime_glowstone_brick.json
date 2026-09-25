@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GG",
+        "GG"
+    ],
+    "key": {
+        "G": "moglowstone:lime_glowstone_block"
+    },
+    "result": {
+        "id": "moglowstoneplus:lime_glowstone_brick",
+		"count": 4
+    }
+}
