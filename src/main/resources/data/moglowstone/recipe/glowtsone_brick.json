@@ -5,12 +5,10 @@
         "GG"
     ],
     "key": {
-        "G": {
-			"item": "minecraft:glowstone"
-		}
+        "G": "minecraft:glowstone"
     },
     "result": {
-        "item": "moglowstone:brick_glowstone_block",
+        "id": "moglowstone:brick_glowstone_block",
 		"count": 4
     }
 }
