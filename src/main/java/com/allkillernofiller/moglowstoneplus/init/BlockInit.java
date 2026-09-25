@@ -1,14 +1,11 @@
 package com.allkillernofiller.moglowstoneplus.init;
 
-import java.util.function.Supplier;
-
 import com.allkillernofiller.moglowstoneplus.MoGlowstonePlus;
 import com.allkillernofiller.moglowstoneplus.block.GSBrick;
 import com.allkillernofiller.moglowstoneplus.block.GSSlabBlock;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
@@ -16,12 +13,10 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class BlockInit {
-    public static DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MoGlowstonePlus.MOD_ID);
-    public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(MoGlowstonePlus.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS = MoGlowstonePlus.BLOCKS;
     /**
      * Mod Blocks
      */
@@ -211,40 +206,4 @@ public class BlockInit {
                     .sound(SoundType.GLASS)
                     .setId(ResourceKey.create(Registries.BLOCK, registryName))
                     .lightLevel(state -> 15)));
-    /**
-     * Mod Items
-     */
-    //slab items
-    public static final DeferredItem<BlockItem> GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("glowstone_slab", GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> WHITE_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("white_glowstone_slab", WHITE_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> ORANGE_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("orange_glowstone_slab", ORANGE_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> MAGENTA_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("magenta_glowstone_slab", MAGENTA_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> LIGHT_BLUE_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("light_blue_glowstone_slab", LIGHT_BLUE_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> LIME_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("lime_glowstone_slab", LIME_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> PINK_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("pink_glowstone_slab", PINK_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> GRAY_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("gray_glowstone_slab", GRAY_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> LIGHT_GRAY_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("light_gray_glowstone_slab", LIGHT_GRAY_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> CYAN_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("cyan_glowstone_slab", CYAN_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> PURPLE_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("purple_glowstone_slab", PURPLE_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> BLUE_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("blue_glowstone_slab", BLUE_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> BROWN_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("brown_glowstone_slab", BROWN_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> GREEN_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("green_glowstone_slab", GREEN_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> RED_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("red_glowstone_slab", RED_GLOWSTONE_SLAB);
-    public static final DeferredItem<BlockItem> BLACK_GLOWSTONE_SLAB_ITEM = ITEMS.registerSimpleBlockItem("black_glowstone_slab", BLACK_GLOWSTONE_SLAB);
-    //brick items
-    public static final DeferredItem<BlockItem> WHITE_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("white_glowstone_brick", WHITE_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> ORANGE_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("orange_glowstone_brick", ORANGE_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> MAGENTA_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("magenta_glowstone_brick", MAGENTA_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> LIGHT_BLUE_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("light_blue_glowstone_brick", LIGHT_BLUE_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> LIME_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("lime_glowstone_brick", LIME_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> PINK_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("pink_glowstone_brick", PINK_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> GRAY_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("gray_glowstone_brick", GRAY_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> LIGHT_GRAY_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("light_gray_glowstone_brick", LIGHT_GRAY_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> CYAN_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("cyan_glowstone_brick", CYAN_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> PURPLE_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("purple_glowstone_brick", PURPLE_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> BLUE_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("blue_glowstone_brick", BLUE_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> BROWN_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("brown_glowstone_brick", BROWN_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> GREEN_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("green_glowstone_brick", GREEN_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> RED_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("red_glowstone_brick", RED_GLOWSTONE_BRICK);
-    public static final DeferredItem<BlockItem> BLACK_GLOWSTONE_BRICK_ITEM = ITEMS.registerSimpleBlockItem("black_glowstone_brick", BLACK_GLOWSTONE_BRICK);
 }
