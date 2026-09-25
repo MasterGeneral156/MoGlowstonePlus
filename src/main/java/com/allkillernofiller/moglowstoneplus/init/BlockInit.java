@@ -119,6 +119,16 @@ public class BlockInit {
                     .sound(SoundType.GLASS)
                     .setId(ResourceKey.create(Registries.BLOCK, registryName))
                     .lightLevel(state -> 15)));
+
+    public static final DeferredBlock<SlabBlock> YELLOW_GLOWSTONE_SLAB =
+            BLOCKS.register("yellow_glowstone_slab", registryName -> new GSSlabBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .sound(SoundType.GLASS)
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
+                    .lightLevel(state -> 15)));
+
+
+
     //brick block
     public static final DeferredBlock<Block> WHITE_GLOWSTONE_BRICK =
             BLOCKS.register("white_glowstone_brick", registryName -> new GSBrick(BlockBehaviour.Properties.of()
@@ -208,6 +218,13 @@ public class BlockInit {
     public static final DeferredBlock<Block> BLACK_GLOWSTONE_BRICK =
             BLOCKS.register("black_glowstone_brick", registryName -> new GSBrick(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BLACK)
+                    .sound(SoundType.GLASS)
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
+                    .lightLevel(state -> 15)));
+
+    public static final DeferredBlock<Block> YELLOW_GLOWSTONE_BRICK =
+            BLOCKS.register("yellow_glowstone_brick", registryName -> new GSBrick(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
                     .sound(SoundType.GLASS)
                     .setId(ResourceKey.create(Registries.BLOCK, registryName))
                     .lightLevel(state -> 15)));

@@ -58,6 +58,7 @@ public class MoGlowstonePlus {
 			ev.accept(ItemInit.PURPLE_GLOWSTONE_SLAB_ITEM);
 			ev.accept(ItemInit.RED_GLOWSTONE_SLAB_ITEM);
 			ev.accept(ItemInit.WHITE_GLOWSTONE_SLAB_ITEM);
+			ev.accept(ItemInit.YELLOW_GLOWSTONE_SLAB_ITEM);
 
 			ev.accept(ItemInit.BLACK_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.BLUE_GLOWSTONE_BRICK_ITEM);
@@ -74,6 +75,7 @@ public class MoGlowstonePlus {
 			ev.accept(ItemInit.PURPLE_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.RED_GLOWSTONE_BRICK_ITEM);
 			ev.accept(ItemInit.WHITE_GLOWSTONE_BRICK_ITEM);
+			ev.accept(ItemInit.YELLOW_GLOWSTONE_BRICK_ITEM);
 
 		}
 	}
