@@ -21,7 +21,12 @@ public class BlockInit {
      * Mod Blocks
      */
     //slab block
-    public static final DeferredBlock<SlabBlock> GLOWSTONE_SLAB = BLOCKS.register("glowstone_slab", () -> new SlabBlock(Block.Properties.ofFullCopy(Blocks.GLOWSTONE)));
+    public static final DeferredBlock<SlabBlock> GLOWSTONE_SLAB =
+            BLOCKS.register("glowstone_slab", registryName -> new GSSlabBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .sound(SoundType.GLASS)
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
+                    .lightLevel(state -> 15)));
     public static final DeferredBlock<SlabBlock> WHITE_GLOWSTONE_SLAB =
         BLOCKS.register("white_glowstone_slab", registryName -> new GSSlabBlock(BlockBehaviour.Properties.of()
             .mapColor(MapColor.SNOW)
