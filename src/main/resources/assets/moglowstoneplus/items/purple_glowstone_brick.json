@@ -1,3 +1,6 @@
 {
-  "parent": "moglowstoneplus:block/purple_glowstone_brick"
+  "model": {
+    "type": "minecraft:model",
+    "model": "moglowstoneplus:block/purple_glowstone_brick"
+  }
 }
