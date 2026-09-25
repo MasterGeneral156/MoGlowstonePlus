@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "moglowstone:light_gray_glowstone_block",
+  "result": {
+    "id": "moglowstoneplus:light_gray_glowstone_brick"
+  }
+}

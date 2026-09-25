@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "moglowstone:pink_glowstone_block",
+  "result": {
+    "id": "moglowstoneplus:pink_glowstone_slab",
+    "count": 2
+  }
+}
