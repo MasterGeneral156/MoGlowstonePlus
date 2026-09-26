@@ -27,6 +27,7 @@ public class MoGlowstonePlus {
 
     public MoGlowstonePlus(IEventBus modbus, ModContainer modContainer) {
 		instance = this;
+		modbus.addListener(this::setup);
         modbus.addListener(this::fillTab);
         BlockInit.BLOCKS.register(modbus);
 		ItemInit.ITEMS.register(modbus);
