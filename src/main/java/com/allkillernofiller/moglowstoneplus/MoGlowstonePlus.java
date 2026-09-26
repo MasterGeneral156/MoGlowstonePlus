@@ -34,7 +34,7 @@ public class MoGlowstonePlus {
 
 	private void setup(final FMLCommonSetupEvent event)
 	{
-		LOGGER.info("Mo' Glowstonez+ for Minecraft v" + ModUtils.getMCVersion() + " is launching.");
+		LOGGER.info("Mo' Glowstone+ for Minecraft v" + ModUtils.getMCVersion() + " is launching.");
 	}
 
 
